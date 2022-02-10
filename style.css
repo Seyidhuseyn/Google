@@ -2,38 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    /* overflow: hidden; */
+    text-decoration: none; /*yazının altındakı xətti ləğv edir*/
 }
 body {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    flex-direction: column; /*elementləri alt-alta düzür*/
+    min-height: 100vh; /*görünən hissənin ölçüsünü müəyyənləşdirir*/
 }
 nav {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: flex-end; /*elementi olduğu hisənin sonuna yerləşdirir*/
+    align-items: center; /*elementi olduğu hissənin aşağı və yuxarı hissəsinə nəzərən mərkəzə yerləşdirir*/
     padding: 6px;
 }
-/* nav a:nth-child(3) {
-    width: 16px;
-    height: 16px;
-} */
 .gb_Ne {
     width: 24px;
     height: 24px;
 }
 .gb_Ne:hover {
-    opacity: .6;
-    background-color: bisque;
-    border-radius: 50%;
+    opacity: .4; /*elementin şəffaflığını təyin edir*/
 }
 nav a{
     margin: 0 7.5px;
 }
 nav a:hover{
-    text-decoration: underline;
+    text-decoration: underline; /*yazının altına xətt əmələ gətirir*/
 }
 nav  button {
     background-color: rgb(26, 115, 232);
@@ -59,7 +52,7 @@ section {
 }
 .s-box i {
     padding: 10px;
-    cursor: pointer;
+    cursor: pointer; /* elementin üzərinə gəldikdə barmaq simgəsi əmələ gətirir*/
     align-items: center;
 }
 .s-box input {
@@ -67,10 +60,11 @@ section {
     width: 500px;
     height: 30px;
     font-size: 20px;
-    border: none;
-    outline: none;
+    border: none; /*görünən düzbucaqlı xətti ləğv edir*/
+    outline: none; /*yazı yazarkən əmələ gələn düzbucaqlı xətti ləğv edir*/
 }
 .btn {
+    display: flex;
     margin: 20px;
 }
 .btn button {
@@ -96,7 +90,7 @@ h2 {
     padding: 10px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /*elementi olduğu bölgədə sağ və sol tərəfdən eyni məsafədə yerləşdirir, ilk və son elementi isə dibə yapışdırır*/
 }
 .links a {
     margin: 0 20px;
@@ -107,6 +101,9 @@ h2 {
     cursor: pointer;
 }
 @media(max-width:400px) {
+    section {
+        min-height: 83.5vh;
+    }
     nav {
         display: none;
     }
@@ -124,7 +121,7 @@ h2 {
         flex-direction: column;
     }
     .link1 {
-        justify-content: space-around;
+        justify-content: space-around; /*elementi olduğu bölgədə sağ və sol tərəfdən eyni məsafədə yerləşdirir*/
     }
     .link2 {
         justify-content: space-around;
